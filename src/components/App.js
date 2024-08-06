@@ -2,12 +2,12 @@ import React from "react";
 import blogData from "../data/blog";
 import Header from "./Header";
 import About from "./About";
-import ArticleList from "./AritcleList";
+import ArticleList from "./ArticleList";
 
-console.log(blogData);
+// console.log(blogData.name);
 
 function App() {
-
+// console.log(blogData)
   return (
     <div className="App">
       <Header name={blogData.name} />

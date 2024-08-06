@@ -1,17 +1,10 @@
-function Article({ posts }) {
-    console.log(posts)
-    const eachPost = posts.map(post => {
-        return (
-            <>
-                <h3>{post.title}</h3>
-                <small>{post.date}</small>
-                <p>{post.preview}</p>
-            </>
-        )
-    })
-
+function Article({ title, preview, minutes, date = "January 1, 1970" }) {
     return (
-        <article>{eachPost}</article>
+        <article>
+            <h3>{title}</h3>
+            <small>{date}</small>
+            <p>{preview}</p>
+        </article>
     )
 }
 
